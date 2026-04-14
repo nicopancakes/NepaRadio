@@ -1,4 +1,5 @@
- { "freq":"155.625", "service":"Law", "county":"Pike", "desc":"Countywide Police Dispatch", "checked":"2026" },
+   const frequencies = [
+  { "freq":"155.625", "service":"Law", "county":"Pike", "desc":"Countywide Police Dispatch", "checked":"2026" },
   { "freq":"155.775", "service":"Law", "county":"Pike", "desc":"Sheriff", "checked":"2026" },
   { "freq":"159.210", "service":"Law", "county":"Pike", "desc":"Eastern Pike Regional PD Tac", "checked":"2026" },
   { "freq":"155.085", "service":"Corrections", "county":"Pike", "desc":"Correctional Facility", "checked":"2026" },
@@ -126,3 +127,4 @@
 { freq:"162.500", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 5", checked:"2026" },
 { freq:"162.525", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 6", checked:"2026" },
 { freq:"162.550", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 7", checked:"2026" }
+];
