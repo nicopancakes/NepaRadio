@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="NEPA FREQ - Frequency reference for Pike, Monroe, and Lackawanna counties in Northeast Pennsylvania. Public safety, police, fire, EMS, and amateur radio channels.">
+<meta name="description" content="NEPA FREQ is a Frequency Database for Pike, Monroe, and Lackawanna counties in Northeast Pennsylvania. Public safety, Police, Fire, EMS, and amateur radio channels.">
 <title>NEPAfreq.org</title>
 
 <style>
@@ -245,6 +245,7 @@ footer {
     <button class="filter-btn" data-county="Monroe">Monroe</button>
     <button class="filter-btn" data-county="Lackawanna">Lackawanna</button>
     <button class="filter-btn" data-county="Wayne">Wayne</button>
+    <button class="filter-btn" data-county="Wayne">NOAA</button>
   </div>
 
   <table id="freqTable">
@@ -387,7 +388,14 @@ footer {
   { "freq":"453.450", "service":"EMS", "county":"Monroe", "desc":"EMS Command", "checked":"2026" },
   { "freq":"453.125", "service":"Interop", "county":"Monroe", "desc":"Emergency / Mutual Aid", "checked":"2026" },
   { "freq":"453.425", "service":"Emergency Ops", "county":"Monroe", "desc":"Incident Command", "checked":"2026" },
-  { "freq":"461.800", "service":"Transportation", "county":"Monroe", "desc":"MCTA Fixed Routes", "checked":"2026" }
+  { "freq":"461.800", "service":"Transportation", "county":"Monroe", "desc":"MCTA Fixed Routes", "checked":"2026" },
+  { freq:"162.400", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 1", checked:"2026" },
+  { freq:"162.425", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 2", checked:"2026" },
+{ freq:"162.450", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 3", checked:"2026" },
+{ freq:"162.475", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 4", checked:"2026" },
+{ freq:"162.500", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 5", checked:"2026" },
+{ freq:"162.525", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 6", checked:"2026" },
+{ freq:"162.550", service:"NOAA Weather Radio", county:"NOAA", desc:"NOAA WX Channel 7", checked:"2026" }
 ];
 
 let currentCountyFilter = "all";
