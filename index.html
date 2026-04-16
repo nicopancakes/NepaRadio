@@ -429,3 +429,111 @@ document.addEventListener("DOMContentLoaded", () => {
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </body>
 </html>
+<div class="top-alert">
+  <div class="scrolling-text">
+    ⚠ Severe Thunderstorm Over Sulivan, Pike, Pecks Pond. Until 1:00AM EST (12:17AM 4/16/26)
+  </div>
+</div>
+<style>
+.top-alert {
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999;         
+  font-size: 1rem;
+}
+
+.top-alert .scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: slide-left 20s linear infinite;
+}
+
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+header {
+  background: #111111;
+  border-bottom: 3px solid #00cc88; 
+  padding: 1.25rem 5%;
+  position: sticky;
+  top: 40px;          
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #ffffff;
+  gap: 6px;
+}
+
+.logo .nepa, .logo .radio { 
+  font-size: 2.5rem; 
+  line-height: 1; 
+}
+
+.logo .org {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #00cc88;
+  padding-bottom: 7px;
+}
+
+nav { 
+  display: flex; 
+  gap: 2.5rem; 
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;       
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+nav a:hover { 
+  color: #00cc88; 
+}
+</style>
+
+<div class="top-alert">
+  <div class="scrolling-text">
+    ⚠ Severe Thunderstorm Over SW Sulivan, SW Pike, Pecks Pond, Hawley,  Until 1:00AM EST (12:17AM 4/16/26)
+  </div>
+</div>
+<header>
+  <div class="logo">
+    <span class="nepa">NEPA</span>
+    <span class="radio">Freq</span>
+    <span class="org">.org</span>
+  </div>
+  <nav>
+    <a href="https://nepafreq.org/index.html">HOME</a>
+    <a href="https://nepafreq.org/index.html">FREQUENCIES</a>
+    <a href="https://nepafreq.org/about">ABOUT</a>
+    <a href="https://taftonems.netlify.app">LIVE</a>
+    <a href="https://nepafreq.org/contact">CONTACT</a>
+    <a href="https://nepafreq.org/gear">MY GEAR</a>
+  </nav>
+</header>
