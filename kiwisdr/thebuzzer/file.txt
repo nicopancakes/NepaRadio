@@ -1,1 +1,3 @@
 http://21612.proxy2.kiwisdr.com:8073/
+http://178.63.122.223:8073/
+http://kiwisdr.dl1rf.ipv64.de:8073/
