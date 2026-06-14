@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+#status {
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.warning {
+    background: red;
+}
+
+.clear {
+    background: gray;
+}
+</style>
+</head>
+<body>
+
+<div id="status">Checking...</div>
+
+<script>
+async function checkWarning() {
+    const html = await fetch("https://www.weather.gov/bgm/")
+        .then(r => r.text());
+
+    const status = document.getElementById("status");
+
+    if (html.includes("Tornado Warning")) {
+        status.textContent = "TORNADO WARNING ACTIVE IN AREA";
+        status.className = "warning";
+    } else {
+        status.textContent = "No Tornado Warning";
+        status.className = "clear";
+    }
+}
+
+checkWarning();
+setInterval(checkWarning, 60000);
+</script>
+</body>
+</html>
